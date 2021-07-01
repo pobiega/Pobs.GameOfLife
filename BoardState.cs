@@ -56,6 +56,9 @@ namespace Pobs.GameOfLife
             {
                 for (var i = -1; i < 1; i++)
                 {
+                    if (j == 0 && i == 0)
+                        continue;
+
                     if (GetValue(x + i, y + j))
                         count++;
                 }
